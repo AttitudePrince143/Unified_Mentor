@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Memory Card Game</h1>
+      <div class="controls">
+        <label for="grid-size">Choose Grid Size:</label>
+        <select id="grid-size">
+          <option value="4">4x4</option>
+          <option value="6">6x6</option>
+        </select>
+        <button id="start">Start Game</button>
+      </div>
+      <div class="stats">
+        <span>Moves: <span id="moves">0</span></span>
+        <span>Time: <span id="timer">0s</span></span>
+        <button id="restart">Restart</button>
+      </div>
+    </header>
+    <div class="grid" id="grid"></div>
+    <div class="win-message" id="winMessage">🎉 You Won!</div>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="match-sound" src="sounds/match.mp3"></audio>
+  <audio id="nomatch-sound" src="sounds/nomatch.mp3"></audio>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

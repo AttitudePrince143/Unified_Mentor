@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A simple and responsive weather application that allows users to check the current weather conditions for any city using the OpenWeatherMap API.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "type": "module"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

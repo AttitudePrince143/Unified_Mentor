@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Multi Countdown Timers</h1>
+    <div class="input-group">
+      <label for="datetime">Set Date & Time:</label>
+      <input type="datetime-local" id="datetime" />
+      <button id="addTimerBtn">Add Countdown</button>
+    </div>
+    <div id="timersContainer" class="timers-container"></div>
+  </div>
+
+  <!-- Beep sound -->
+  <audio id="beepSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
