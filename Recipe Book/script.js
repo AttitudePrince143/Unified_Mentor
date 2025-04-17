@@ -14,7 +14,7 @@ function displayRecipes(recipeList) {
     const recipeEl = document.createElement("div");
     recipeEl.classList.add("recipe-card");
     recipeEl.innerHTML = `
-      <img src="${recipe.image}" alt="${recipe.name}" />
+    
       <h3>${recipe.name}</h3>
       <p><strong>Ingredients:</strong> ${recipe.ingredients.join(", ")}</p>
       <p><strong>Steps:</strong> ${recipe.steps}</p>
@@ -28,15 +28,15 @@ recipeForm.addEventListener("submit", (e) => {
   const name = document.getElementById("name").value.trim();
   const ingredients = document.getElementById("ingredients").value.trim().split(',');
   const steps = document.getElementById("steps").value.trim();
-  const image = document.getElementById("image-url").value.trim();
+ 
 
-  if (!name || ingredients.length === 0 || !steps || !image) return;
+  if (!name || ingredients.length === 0 || !steps ) return;
 
   const newRecipe = {
     name,
     ingredients,
     steps,
-    image
+    
   };
 
   recipes.push(newRecipe);
