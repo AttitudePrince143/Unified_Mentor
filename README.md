@@ -3,7 +3,7 @@ some projects which has completed during intership
 
 
 # 1- To-Do-List 
-https://attitudeprince143.github.io/Unified_Mentor/To-Do%20List%20App/
+https://attitudeprince143.github.io/Unified_Mentor/To-Do%20List%20App
 
 # 2-Recipe Book App
 https://attitudeprince143.github.io/Unified_Mentor/Recipe%20Book/
