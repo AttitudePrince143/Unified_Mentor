@@ -1,76 +1,174 @@
+/* ========== CSS RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ========== Root Variables ========== */
+:root {
+  --primary: #4CAF50;
+  --primary-dark: #388E3C;
+  --light-gray: #f4f6f8;
+  --gray: #ccc;
+  --text-dark: #333;
+  --text-light: #666;
+  --danger: #dc3545;
+  --danger-dark: #c82333;
+  --white: #ffffff;
+}
+
+/* ========== Body & Container ========== */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-gray);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== Heading ========== */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--primary-dark);
+}
+
+/* ========== Form Elements ========== */
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+form button {
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ========== Search Bar ========== */
+#search {
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid var(--gray);
+  margin: 20px 0 30px;
+  background-color: var(--white);
+}
+
+#search:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* ========== Recipe Card ========== */
+.recipe-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+}
+
+.recipe-card p {
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* ========== Delete Button ========== */
+.delete-btn {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: var(--danger-dark);
+}
+
+/* ========== No Results ========== */
+.no-results {
+  text-align: center;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
   .container {
-    max-width: 800px;
-    margin: 30px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px 15px;
   }
-  
+
   h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
-  
+
   form input,
   form textarea,
-  form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #28a745;
-    color: white;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #218838;
-  }
-  
+  form button,
   #search {
-    margin-top: 20px;
+    font-size: 14px;
     padding: 10px;
-    width: 100%;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
   }
-  
+
   .recipe-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
     padding: 15px;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
-  
-  .recipe-card img {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
+
   .recipe-card h3 {
-    margin-top: 10px;
+    font-size: 1.1rem;
   }
-  
-  .recipe-card p {
-    margin: 5px 0;
-  }
-  
+}
