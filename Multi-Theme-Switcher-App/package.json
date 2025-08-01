@@ -1,7 +1,7 @@
 {
   "name": "multi-theme-switcher-app",
   "version": "1.0.0",
-  "homepage": "https://attitudeprince143.github.io/Multi_Theme_App",
+  "homepage": "https://attitudeprince143.github.io/Unified_Mentor/Multi-Theme-Switcher-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
