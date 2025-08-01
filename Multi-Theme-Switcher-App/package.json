@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist --repo=https://github.com/AttitudePrince143/Unified_Mentor.git"
+    "deploy": "vite build && gh-pages -d dist --repo=https://github.com/AttitudePrince143/Unified_Mentor.git --branch=gh-pages --dest Multi-Theme-Switcher-App"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
